@@ -1,0 +1,56 @@
+p{
+    margin: 0px;
+}
+.navigator{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 80px;
+}
+
+.top_header{
+    padding: 0px 0px;
+    background-color: #ff3639;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+}
+
+.social i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.location p{
+    margin: 0px;
+    font-size: 12px;
+    color: white;
+}
+
+.location i{
+    color: white;
+}
+
+.nav_bar{
+    padding: 10px 0px;
+}
+
+.navigator p{
+    cursor: pointer;
+}
+
+.navigator p:hover{
+    color: #ff3639;
+}
