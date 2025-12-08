@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 declare function swipe():any
 declare function counter():any
+declare function testimonial():any
+declare function slider():any
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -20,6 +22,8 @@ export class HomeComponent implements AfterViewInit,OnInit {
   ngAfterViewInit(): void {
     swipe();
     counter();
+    testimonial();
+    slider();
   }
 
 
