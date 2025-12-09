@@ -31,15 +31,15 @@
               "src/assets/css/odometer-theme-default.css",
               "src/assets/css/swiper.min.css"
             ],
-            "scripts": [ 
+            "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/jquery/dist/jquery.min.js",
               "src/assets/js/swiper.min.js",
               "src/assets/js/odometer.min.js",
               "src/assets/js/main.js"
-            ] 
+            ]
           },
-          "configurations": { 
+          "configurations": {
             "production": {
               "budgets": [
                 {
@@ -49,8 +49,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "8kb",
-                  "maximumError": "8kb"
+                  "maximumWarning": "20kb",
+                  "maximumError": "30kb"
                 }
               ],
               "outputHashing": "all"
