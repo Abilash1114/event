@@ -1258,3 +1258,11 @@ a{
 a:hover{
     color: #7E0086 !important;
 }
+
+.feature-box-content p{
+    font-size: 14px;
+}
+
+.feature-box-content h3{
+    font-size: 22px;
+}
