@@ -344,6 +344,9 @@
     background: linear-gradient(0deg, rgba(62, 14, 84, 1) 0%, rgba(183, 38, 255, 1) 100%, );
 }
 
+.call_button p a:hover{
+    color: white !important;
+}
 
 
 /* pricing tags Start */
