@@ -331,7 +331,7 @@
 
 
 .call_button p {
-    background: linear-gradient(0deg, rgba(183, 38, 255, 1) 0%, rgba(62, 14, 84, 1) 100%);
+    background: linear-gradient(0deg, #b726ff 0%, #3e0e54 100%);
     text-align: center;
     border-radius: 20px;
     color: white;
@@ -1274,4 +1274,19 @@ a:hover{
 
 .feature-box-content h3{
     font-size: 22px;
+}
+
+.botfoot p{
+    color: white !important;
+    margin: 10px 0px!important;
+    font-weight: 400;
+}
+
+.botfoot p a:hover{
+    color: white !important;
+}
+
+.botfoot{
+    padding: 0px 30px;
+
 }
