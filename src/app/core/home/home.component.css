@@ -364,7 +364,7 @@
 }
 
 .pricing-card {
-    width: 380px;
+    /* width: 380px; */
     padding: 2.5rem;
     border-radius: 24px;
     /* background: linear-gradient(145deg,
@@ -561,7 +561,7 @@
 
     .pricing-card {
         width: 100%;
-        max-width: 380px;
+        /* max-width: 380px; */
     }
 }
 
@@ -1071,28 +1071,28 @@ a {
     border-radius: 20px;
 }
 
-.tites p{
+.tites p {
     text-align: center;
     font-size: 34px;
-      font-family: "Revalia", sans-serif;
-      color: #571e5f;
-      font-weight: 600;
+    font-family: "Revalia", sans-serif;
+    color: #571e5f;
+    font-weight: 600;
 }
 
-.subtites p{
+.subtites p {
     color: #2c1e2e;
     text-align: center;
     font-weight: 400;
     color: #1e1d1d;
 }
 
-h3{
-       font-family: "Barlow", sans-serif;
-       font-weight: 600;
-       color: #4a354d;
+h3 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    color: #4a354d;
 }
 
-.testimonial{
+.testimonial {
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -1101,64 +1101,96 @@ h3{
 /* footer section start */
 
 
-.footer_section{
+.footer_section {
     padding: 5px 30px;
 }
 
-.container-fluid{
+.container-fluid {
     border-radius: 20px;
-} 
+}
 
-.contens{
+.contens {
     background-color: #F7ECF9;
 }
 
-.foooter_content_section{
+.foooter_content_section {
     padding: 20px 10px;
 }
 
-.foot_about{
+.foot_about {
     text-align: justify;
     margin-top: 10px !important;
 }
 
-.foot_about p{
+.foot_about p {
     line-height: 30px;
-} 
+}
 
-.first_said{
+.first_said {
     padding-right: 30px;
 }
 
-.footer_tit p{
-  color: #372E45;
-  font-family: "Lora", serif;
-  font-weight: 600;
-  font-size: 20px;
+.footer_tit p {
+    color: #372E45;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-size: 20px;
 }
 
-.footer_sub p{
-    margin-bottom:20px;
+.footer_sub p {
+    margin-bottom: 20px;
     color: #2B2130;
     font-size: 16px;
     cursor: pointer;
-        font-family: "Barlow", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-weight: 500;
 }
 
-.footer_sub p:hover{
+.footer_sub p:hover {
     color: #7E0086;
     font-family: "Barlow", sans-serif;
     font-weight: 500;
 }
 
-.footer_sub p span{
+.footer_sub p span {
     color: #1E1C1F;
 }
-.footer span{
+
+.footer span {
     color: #7E0086;
 }
 
-.footer{
+.footer {
     color: #2B2130;
+}
+
+@media screen and (min-width: 380px) and (max-width: 768px) {
+    .banes {
+        margin-top: 30px;
+    }
+
+    .pricing-card {
+        width: 100% !important;
+        min-width: none;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    
+.footer_section {
+    padding: 5px 0px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 12px;
+}
+.designes{
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.designes p{
+ font-size: 12px;   
+}
 }
