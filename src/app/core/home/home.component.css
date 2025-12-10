@@ -365,7 +365,7 @@
 
 .pricing-card {
     /* width: 380px; */
-    padding: 2.5rem;
+    padding: 20px;
     border-radius: 24px;
     /* background: linear-gradient(145deg,
             rgba(28, 35, 65, 0.7) 0%,
@@ -404,7 +404,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: .5rem;
     font-size: 1.5rem;
     position: relative;
     overflow: hidden;
@@ -439,9 +439,9 @@
 }
 
 .price {
-    font-size: 3rem;
+    font-size: 2.3rem;
     font-weight: 700;
-    margin: 1.5rem 0;
+    margin: 0.5rem 0;
     color: #3f3a3a;
     display: flex;
     align-items: baseline;
@@ -456,7 +456,10 @@
 
 .features {
     list-style: none;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
+    margin: 0px !important;
+    padding: 0px !important;
+    
 }
 
 .features li {
@@ -476,7 +479,7 @@
 
 .cta-button {
     /* width: 100%; */
-    padding: 1.05rem;
+    padding: 1.00rem;
     border: none;
     border-radius: 16px;
     background: linear-gradient(135deg, rgba(183, 38, 255, 1) 0%, rgba(62, 14, 84, 1) 100%);
@@ -1025,8 +1028,14 @@ a {
 }
 
 .why-choose-us .feature-box:hover .fbc-btn {
-    background: #e73ad0;
+    background: #ffdcfa;
     color: #fff;
+}
+.fbc-btn{
+    border: 1px solid #fff5fe;
+}
+.fbc-btn img{
+    width: 60px;
 }
 
 .why-choose-us .feature-box::before {
