@@ -11,7 +11,7 @@ p {
 
 .top_header {
     padding: 0px 0px;
-    background-color: #ff3639;
+    background-color: #7E0086;
 }
 
 .social {
@@ -54,7 +54,7 @@ p {
 }
 
 .navigator p:hover {
-    color: #ff3639;
+    color: #ee00ff;
 }
 
 .naves {
@@ -67,7 +67,7 @@ p {
     width: 100px;
 }
 
-.call_button p {
+.call_button p{
     background: linear-gradient(0deg, rgba(183, 38, 255, 1) 0%, rgba(62, 14, 84, 1) 100%);
     text-align: center;
     border-radius: 20px;
@@ -75,6 +75,9 @@ p {
     padding: 5px 15px;
     border: 2px solid #ffffff;
     cursor: pointer;
+}
+a{
+       color: white;
 }
 
 .call_button p:hover {
@@ -85,4 +88,65 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.mobile_items i{
+    color: white;
+    font-size: 26px;
+}
+
+.mobile_view{
+    width: 270px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+
+.mobile_contents{
+    padding: 20px 20px;
+}
+
+.mobile_ties p{
+    color: #7E0086;
+    font-size: 22px;
+    margin: 0px;
+}
+.mobile_view_nav p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid #7d008610;
+    padding-bottom: 20px;
+}
+
+.topes{
+    margin-top: 40px;
+}
+
+.close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color:#7d008610 ;
+    border-radius: 50%;
+}
+
+.close i{
+    color: #7E0086;
+    font-size: 20px;
+}
+
+.mobile_ties{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile_view_nav p:hover{
+    color: #7E0086;
+    cursor: pointer;
 }

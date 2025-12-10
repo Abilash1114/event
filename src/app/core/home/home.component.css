@@ -598,14 +598,15 @@ wrap {
     border: 1px solid #D8D8D8;
 }
 
-.review-card .review-card-img {
+.review-card .review-card-img img {
     border: 1px solid #eee;
-    width: 100px;
+    width: 70px;
     height: 70px;
-    background-image: url('https://unsplash.it/200');
+    /* background-image: url('https://unsplash.it/200'); */
     background-repeat: no-repeat;
     background-position: center center;
     margin: 0 auto 15px;
+    border-radius: 50%;
 }
 
 .review-card .review-author .ra-author {
@@ -860,19 +861,18 @@ wrap {
 
 .slider_tet h1 {
     color: #fff !important;
-    font-size: 50px;
+    font-size: 68px;
     letter-spacing: 5px;
-
-    line-height: 70px !important;
+    line-height: 100px !important;
     font-family: "Barlow", sans-serif;
 
 }
 
 .slider_tet {
     position: absolute;
-    left: 120px;
+    left:120px;
     z-index: 100;
-
+bottom: 20px;
 }
 
 .slider-container::after {
@@ -919,7 +919,7 @@ wrap {
     }
 }
 
-.controls-container {
+/* .controls-container {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -944,7 +944,7 @@ wrap {
     background-color: #fff;
     opacity: 1;
     transform: scale(1.2);
-}
+} */
 
 .overes {
     position: absolute;
@@ -1074,8 +1074,8 @@ a {
 .tites p {
     text-align: center;
     font-size: 34px;
-    font-family: "Revalia", sans-serif;
-    color: #571e5f;
+    font-family: "barlow", sans-serif;
+    color: #d2008c;
     font-weight: 600;
 }
 
@@ -1141,7 +1141,7 @@ h3 {
     margin-bottom: 20px;
     color: #2B2130;
     font-size: 16px;
-    cursor: pointer;
+    cursor: pointer; 
     font-family: "Barlow", sans-serif;
     font-weight: 500;
 }
@@ -1193,4 +1193,68 @@ h3 {
 .designes p{
  font-size: 12px;   
 }
+.footer_tit{
+    margin-top: 20px;
+}
+.review-card--option-4{
+    padding: 5px;
+}
+.review-content p{
+    font-size: 12px;
+}
+
+.back-pos{
+    height: auto !important;
+}
+.testimonial{
+  padding-top: 70px;
+  padding-bottom: 0px;
+}
+.slider_tet h1 {
+    color: #fff !important;
+    font-size: 38px;
+    letter-spacing: 0px;
+    line-height: 60px !important;
+    font-family: "Barlow", sans-serif;
+
+}
+
+.slider_tet {
+    position: absolute;
+    left: 20px;
+    z-index: 100;
+bottom: 20px;
+}
+}
+
+.ra-rating-star i{
+    color: #e7e130;
+}
+
+.upes .upcom p::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 1px;
+  background-color: #d2008c;
+  left: 90px;
+  top: 15px;
+}
+
+.feature-box-content p{
+    font-weight: 400;
+}
+
+
+a{
+  text-decoration: none !important;
+    font-family: "Roboto", sans-serif !important;
+        font-size: 16px;
+       font-weight: 500;
+       margin: 0px;
+       padding: 0px;
+}
+
+a:hover{
+    color: #7E0086 !important;
 }

@@ -197,3 +197,17 @@ controls.forEach(control => {
 	});
 });
 }
+
+function mobilemenu() {
+  var mobile_items = document.getElementById('mobile_items');
+  var mobile_close = document.getElementById('close');
+  var mobile_open = document.getElementById('mobile_view');
+
+  mobile_items.addEventListener('click', (e) => {
+    mobile_open.style.display = 'block';
+  });
+
+  mobile_close.addEventListener('click', (e) => {
+    mobile_open.style.display = 'none';
+  });
+}

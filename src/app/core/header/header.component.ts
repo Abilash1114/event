@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { AfterViewInit, Component } from '@angular/core';
+declare function mobilemenu():any
 @Component({
   selector: 'app-header',
   standalone: true,
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit{
+  ngAfterViewInit(): void {
+    mobilemenu();
+  }
 
 }

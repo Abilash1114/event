@@ -17,3 +17,11 @@
        color: #4C4C4C;
   }
 
+a{
+  text-decoration: none !important;
+    font-family: "Roboto", sans-serif !important;
+        font-size: 16px;
+       font-weight: 500;
+       margin: 0px;
+       padding: 0px;
+}
