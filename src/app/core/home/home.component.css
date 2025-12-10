@@ -877,9 +877,13 @@ wrap {
 
 .slider_tet {
     position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: start;flex-direction: column;
+    /* left: 120px; */
     left: 120px;
     z-index: 100;
-    bottom: 250px;
+    /* bottom: 250px; */
 }
 
 .slider-container::after {
@@ -1243,9 +1247,13 @@ h3 {
 
     .slider_tet {
         position: absolute;
-        left: 20px;
+        /* left: 20px; */
         z-index: 100;
-        bottom: 20px;
+        left: 20px;
+        /* bottom: 20px; */
+    }
+    .card_name p{
+        font-size: 12px;
     }
 }
 
@@ -1302,4 +1310,8 @@ a:hover {
 .botfoot {
     padding: 0px 30px;
 
+}
+
+.cardes{
+    width: 200px !important;overflow: hidden;
 }
