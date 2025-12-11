@@ -9,6 +9,16 @@ p {
     gap: 80px;
 }
 
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .navigator {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 40px !important;
+}
+
+}
+
 .top_header {
     padding: 0px 0px;
     background-color: #7E0086;
