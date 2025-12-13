@@ -1,9 +1,8 @@
 /* 🔹 Loader wrapper + CSS variables */
 .over_all_loader {
-  --size: calc(100vw / 5);
-  --neon: GoldenRod;
-  --background: black;
-  --timer: 1s;
+  --color: #daa520;
+  --size: 8px;
+  --time: 1.2s;
 
   width: 100vw;
   height: 100vh;
@@ -19,69 +18,52 @@
   font-size: calc(1.75vw + 1.75vh);
 }
 
-/* Center content */
-.loader-wrap {
-  position: relative;
+#cyber-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/* Animation */
-@keyframes animate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.datastream {
+  display: flex;
+  gap: 8px;
 }
 
-.loader {
-  position: absolute;
+.bar {
   width: var(--size);
-  height: var(--size);
-  animation: animate calc(var(--timer) * 3) linear infinite;
+  height: 60px;
+  background: var(--color);
+  filter: drop-shadow(0 0 10px var(--color));
+  animation: blink var(--time) infinite;
 }
 
-.loader span {
-  position: absolute;
-  inset: calc(var(--size) * 0.1);
-  background: var(--background);
-  border-radius: 50%;
+.bar-1 { animation-delay: 0s; }
+.bar-2 { animation-delay: 0.15s; }
+.bar-3 { animation-delay: 0.3s; }
+.bar-4 { animation-delay: 0.45s; }
+.bar-5 { animation-delay: 0.6s; }
+.bar-6 { animation-delay: 0.75s; }
+.bar-7 { animation-delay: 0.9s; }
+.bar-8 { animation-delay: 1.05s; }
+
+.loader-text {
+  margin-top: 20px;
+  color: var(--color);
+  font-family: monospace;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
-div[class*='segment']::before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(to top, transparent, var(--neon));
-  background-repeat: no-repeat;
-  border-top-left-radius: calc(var(--size) * 0.5);
-  border-bottom-left-radius: calc(var(--size) * 0.5);
-}
-
-.segment1 { animation-delay: 0s; }
-.segment2 { animation-delay: calc(var(--timer) * -1); }
-.segment3 { animation-delay: calc(var(--timer) * -2); }
-
-.loader i {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(var(--size) * 0.1);
-  height: calc(var(--size) * 0.1);
-  background: var(--neon);
-  border-radius: 50%;
-  box-shadow:
-    0 0 calc(var(--size) * 0.1) var(--neon),
-    0 0 calc(var(--size) * 0.3) var(--neon),
-    0 0 calc(var(--size) * 0.5) var(--neon);
-}
-
-p {
-  margin-top: calc(var(--size) * 1.5);
-  color: gold;
-  text-align: center;
+@keyframes blink {
+  0% { opacity: 0.1; transform: scaleY(0.5); }
+  50% { opacity: 1; transform: scaleY(1.2); }
+  100% { opacity: 0.1; transform: scaleY(0.5); }
 }
