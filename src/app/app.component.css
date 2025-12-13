@@ -1,0 +1,120 @@
+/* body {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+} */
+ .over_all_loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;z-index: 99999;
+    background-color: rgba(32, 24, 24, 0.861);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+body.dark {
+	background: #222;
+}
+
+body.dark .loader {
+	--background: #222;
+}
+
+.loader {
+	--speed: 5s;
+	--size: 100px;
+	--background: #FFF;
+	
+	height: var(--size);
+	aspect-ratio: 1;
+	position: relative;
+	filter: url(#round);
+}
+
+.loader > div {
+	position: absolute;
+	inset: 0;
+	z-index: 10;
+	filter: blur(calc(0.075 * var(--size)));
+}
+
+.loader::before,
+.loader::after,
+.loader > div::before {
+	content: '';
+	display: block;
+	inset: 0;
+	position: absolute;
+/* 	clip-path: polygon(57% 97%, 22% 69%, 4% 43%, 45% 1%, 71% 20%, 100% 53%); */
+/* 	clip-path: polygon(50% 84%, 10% 80%, 10% 18%, 50% 15%, 92% 18%, 92% 80%); */
+/* 	clip-path: polygon(67% 78%, 39% 94%, 3% 48%, 28% 25%, 62% 0, 100% 50%); */
+/* 	clip-path: polygon(100% 56%, 58% 99%, 25% 69%, 1% 41%, 43% 0, 71% 23%); */
+/* 	clip-path: polygon(100% 54%, 67% 80%, 32% 95%, 1% 43%, 33% 21%, 70% 1%); */
+/* 	clip-path: polygon(91% 20%, 91% 76%, 50% 88%, 10% 78%, 10% 20%, 50% 13%); */
+/* 	clip-path: polygon(65% 2%, 100% 45%, 71% 78%, 38% 97%, 0 51%, 27% 17%); */
+/* 	clip-path: polygon(50% 16%, 84% 16%, 84% 81%, 50% 81%, 18% 81%, 18% 16%); */
+	animation: rotate var(--speed) infinite linear both;
+}
+
+/* Stroke */
+.loader::before {
+	background: linear-gradient(-45deg, #FC75BC, #FB60FC);
+}
+
+/* Inner Shadow */
+.loader::after {
+	display: none;
+	background: linear-gradient(-45deg, #FC75BC, #FB60FC);
+	inset: 4%;
+}
+
+.loader > div:before {
+	background: var(--background);
+	inset: 5%;
+}
+
+@keyframes rotate {
+	0% {
+		clip-path: polygon(18% 82%, 18% 16%, 50% 16%, 84% 16%, 84% 82%, 50% 82%);
+	}
+
+	12.5% {
+		clip-path: polygon(50% 84%, 10% 80%, 10% 18%, 50% 15%, 92% 18%, 92% 80%);
+	}
+
+	25% {
+		clip-path: polygon(57% 97%, 22% 69%, 4% 43%, 45% 1%, 71% 20%, 100% 53%);
+	}
+	
+	37.5% {
+/* 		clip-path: polygon(67% 78%, 39% 94%, 3% 48%, 28% 25%, 62% 0, 100% 50%); */
+		clip-path: polygon(65% 75%, 39% 94%, 3% 48%, 28% 25%, 59% 4%, 95% 44%);
+	}
+
+	50% {
+/* 		clip-path: polygon(100% 56%, 58% 99%, 25% 69%, 1% 41%, 43% 0, 71% 23%); */
+		clip-path: polygon(96% 52%, 55% 96%, 25% 69%, 3% 44%, 45% 3%, 70% 24%);
+	}
+	
+	62.5% {
+		clip-path: polygon(100% 54%, 67% 80%, 32% 95%, 1% 43%, 33% 21%, 70% 1%);
+	} 
+	
+	75% {
+		clip-path: polygon(91% 20%, 91% 76%, 50% 88%, 10% 78%, 10% 20%, 50% 13%);
+	}
+	
+	87.5% {
+		clip-path: polygon(65% 2%, 100% 45%, 71% 78%, 38% 97%, 0 51%, 27% 17%);
+	}
+	
+	100% {
+		clip-path: polygon(50% 16%, 84% 16%, 84% 81%, 50% 81%, 18% 81%, 18% 16%);
+	}
+}
+.over_all_loader {
+  transition: opacity 0.4s ease;
+}
