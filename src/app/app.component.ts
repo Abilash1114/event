@@ -21,34 +21,33 @@ export class AppComponent implements AfterViewInit {
     this.minimumDelay();
   }
 
-  // ⏱ Minimum 5 seconds loader
   private minimumDelay() {
     setTimeout(() => {
       this.minTimeDone = true;
-      this.checkAndHideLoader();
-    }, 5000);
+      this.checkAndHide();
+    }, 5000); // ⏱ 5 seconds
   }
 
   private waitForImages() {
     const images = Array.from(document.images);
-    let loadedCount = 0;
-    const totalImages = images.length;
+    let loaded = 0;
+    const total = images.length;
 
-    if (totalImages === 0) {
+    if (total === 0) {
       this.imagesLoaded = true;
-      this.checkAndHideLoader();
+      this.checkAndHide();
       return;
     }
 
     const increment = () => {
-      loadedCount++;
-      if (loadedCount === totalImages) {
+      loaded++;
+      if (loaded === total) {
         this.imagesLoaded = true;
-        this.checkAndHideLoader();
+        this.checkAndHide();
       }
     };
 
-    images.forEach((img) => {
+    images.forEach(img => {
       if (img.complete) {
         increment();
       } else {
@@ -58,7 +57,7 @@ export class AppComponent implements AfterViewInit {
     });
   }
 
-  private checkAndHideLoader() {
+  private checkAndHide() {
     if (this.imagesLoaded && this.minTimeDone) {
       this.showLoader = false;
     }

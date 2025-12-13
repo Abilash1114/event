@@ -1,13 +1,13 @@
 <!-- GLOBAL LOADER -->
 <div class="over_all_loader" *ngIf="showLoader">
-  <div class="loader">
-    <div class="inner"></div>
+  <div class="loader-wrap">
+    <div class="loader segment1"><span></span><i></i></div>
+    <div class="loader segment2"><span></span><i></i></div>
+    <div class="loader segment3"><span></span><i></i></div>
+    <p>⇦ The Aura Elite Events ⇨</p>
   </div>
 </div>
 
 <!-- APP CONTENT -->
 <app-header></app-header>
-
 <router-outlet></router-outlet>
-
-<!-- <app-footer></app-footer> -->
