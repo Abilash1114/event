@@ -1,7 +1,7 @@
 /* 🔹 Loader wrapper + CSS variables */
 .over_all_loader {
   --size: calc(100vw / 5);
-  --neon: #d2008c;
+  --neon: GoldenRod;
   --background: black;
   --timer: 1s;
 
