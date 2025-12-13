@@ -9,7 +9,7 @@
     position: fixed;
     top: 0px;
     left: 0px;z-index: 99999;
-    background-color: rgba(32, 24, 24, 0.861);
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
