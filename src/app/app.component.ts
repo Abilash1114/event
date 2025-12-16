@@ -25,7 +25,7 @@ export class AppComponent implements AfterViewInit {
     setTimeout(() => {
       this.minTimeDone = true;
       this.checkAndHide();
-    }, 5000); // ⏱ 5 seconds
+    }, 1000); // ⏱ 5 seconds
   }
 
   private waitForImages() {
